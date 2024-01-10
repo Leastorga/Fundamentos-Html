@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+
+<body>
+    <h1>Creating tables in HTML</h1>
+
+    <table>
+        <tr>
+            <!--Cabeçalho-->
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+        </tr>
+        <tr> <!--Linha-->
+            <!--Colunas-->
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td> Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2> Tables with header</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Engineer</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+                <td>Attorney</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> tables with custom cells</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Personal Information</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Name: </td>
+                <td>João</td>
+                <td rowspan="2">Phone: 11933542048</td>                
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
