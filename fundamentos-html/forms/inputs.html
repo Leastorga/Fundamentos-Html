@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <title>Inputs in HTML</title>
+</head>
+
+<body>
+    <h1>Inputs in html</h1>
+    <form action="">
+        <!-- Campo de texto -->
+        <label for="none">Name:</label>
+        <input type="text" id="Name" name="name" required>
+        <br><br>
+
+        <!-- Campo de email -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <!-- Campo de seleção radio -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="f">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Campo de seleção múltipla -->
+        <label>Interest: </label>
+        <input type="checkbox" id="backend" value="backend" name="interest">
+        <label for="backend">Back-end</label>
+        <input type="checkbox" id="frontend" value="frontend" name="interest">
+        <label for="frontend">Front-end</label>
+        <input type="checkbox" id="mobile" value="mobile" name="interest">
+        <label for="mobile">Mobile</label>
+        <br><br>
+
+        <!-- Campo data -->
+        <label for="dateofbirth">Date of birth: </label>
+        <input type="date" name="birth" id="dateofbirth">
+        <br><br>
+        
+        <!-- Campo de arquivo (uploads) -->
+        <label for="profilepicture">Profile picture:</label>
+        <input type="file" name="picture" id="profilepicture">
+        <br><br>
+
+        <!-- Campo de caixa de seleção -->
+        <label for="situation">Current Situation:</label>
+        <select name="situation" id="situation">
+            <option value="" selected disabled>Select one of the options...</option>
+            <option value="student">Studying to become a programmer</option>
+            <option value="intern">Working as an intern/trainee</option>
+            <option value="junior">Working as a junior developer</option>
+            <option value="midlevel">Working as a mid-level developer</option>
+        </select>
+        <br><br>
+
+
+        <!-- Campo de área de texto de múltiplas linhas-->
+        <label for="about">About me:</label>
+        <textarea name="about" id="about" cols="40" rows="6" placeholder="Tells us a little about yourself"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
